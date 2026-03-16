@@ -1,10 +1,10 @@
 <!doctype html>
-<html>
+<html lang="cs">
     <head>
         <title>Jakub Hrstka - Frontend Engineer</title>
         <meta
             name="description"
-            content="Jakub's personal website - frontend developer"
+            content="Jakub Hrstka - frontend developer, osobni portfolio"
         />
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,24 +21,90 @@
             defer
         ></script>
     </head>
-    <body>
-        <main>
-            <h1>Jakub Hrstka</h1>
-            <h2>Frontend Engineer</h2>
+    <body class="bg-gray-900 text-gray-100 font-mono text-base leading-relaxed m-0">
+        <main class="max-w-[640px] mx-auto px-6 pt-16 pb-24 max-sm:px-5 max-sm:pt-12 max-sm:pb-16">
+            <!-- Hero -->
+            <section class="mb-16">
+                <div class="mb-6">
+                    <h1 class="text-[1.75rem] font-semibold m-0 mb-1">Jakub Hrstka</h1>
+                    <span class="text-gray-200 text-sm">Frontend Engineer</span>
+                </div>
 
-            <ul>
-                <li><a href="https://github.com/jakubhrstka">github</a></li>
-                <li>
-                    <a href="https://www.linkedin.com/in/hrstkajakub/">
-                        linkedin
+                <p class="text-gray-200 text-sm mb-3">
+                    V <a href="https://www.cdn77.com/" class="text-gray-100 font-medium underline underline-offset-4 hover:no-underline">CDN77</a> vyvíjím rozhraní s důrazem na přístupnost a web performance. Propojuji technickou čistotu kódu s precizním UI a funkčním UX, které odpovídá návrhu i reálným potřebám uživatelů.
+                </p>
+
+                <p class="text-gray-200 text-sm mb-0">
+                    Najdete mě na
+                    <a href="https://github.com/jakubhrstka" class="text-gray-100 font-medium underline underline-offset-4 hover:no-underline">GitHubu</a>,
+                    <a href="https://www.linkedin.com/in/hrstkajakub/" class="text-gray-100 font-medium underline underline-offset-4 hover:no-underline">LinkedInu</a>
+                    nebo mi napište na
+                    <a href="mailto:hi@jakubhrstka.cz" class="text-gray-100 font-medium underline underline-offset-4 hover:no-underline">hi@jakubhrstka.cz</a>.
+                </p>
+            </section>
+
+            <!-- Projekty -->
+            <section class="mb-16">
+                <h2 class="text-sm font-medium text-gray-100 mb-6">Projekty</h2>
+                <div class="grid grid-cols-2 gap-4 max-sm:grid-cols-1">
+                    <a href="https://dooom.cz/" class="flex flex-col gap-6 p-5 border border-gray-800 rounded-xl no-underline transition-colors duration-200 hover:border-gray-300">
+                        <div class="text-gray-200 w-8 h-8">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
+                                <polyline points="9 22 9 12 15 12 15 22"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-sm font-medium text-gray-100 mb-1.5">dooom.cz</h3>
+                            <p class="text-[0.8125rem] text-gray-200 leading-normal m-0">Web pro architektonické studio. Realizace čistého vizuálního stylu s důrazem na rychlost odezvy a plynulé procházení portfolia.</p>
+                        </div>
                     </a>
-                </li>
-            </ul>
+                    <a href="https://greasebase.com" class="flex flex-col gap-6 p-5 border border-gray-800 rounded-xl no-underline transition-colors duration-200 hover:border-gray-300">
+                        <div class="text-gray-200 w-8 h-8">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="3"/>
+                                <path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-sm font-medium text-gray-100 mb-1.5">Greasebase <span class="inline-block text-[0.625rem] font-medium text-gray-200 border border-gray-300 rounded-full px-2 py-0.5 align-middle uppercase tracking-wide">brzy</span></h3>
+                            <p class="text-[0.8125rem] text-gray-200 leading-normal m-0">Správa vozového parku. Přehled flotily v rozhraní postaveném s důrazem na efektivní UX a přehlednost dat.</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
 
-            <p>
-                or contact me at
-                <a href="mailto:hi@jakubhrstka.cz">hi@jakubhrstka.cz</a>
-            </p>
+            <!-- Zkušenosti -->
+            <section class="mb-16">
+                <h2 class="text-sm font-medium text-gray-100 mb-6">Zkušenosti</h2>
+                <div class="flex flex-col gap-6">
+                    <div>
+                        <div class="flex flex-col gap-0.5 mb-2">
+                            <a href="https://www.cdn77.com/" class="font-medium text-sm text-gray-100 underline underline-offset-4 hover:no-underline" target="_blank" rel="noopener">CDN77</a>
+                            <span class="text-xs text-gray-300">2025 – současnost</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex flex-col gap-0.5 mb-2">
+                            <a href="https://www.etnetera.cz/" class="font-medium text-sm text-gray-100 underline underline-offset-4 hover:no-underline" target="_blank" rel="noopener">Etnetera Core</a>
+                            <span class="text-xs text-gray-300">2019 – 2024 · 5 let</span>
+                        </div>
+                        <p class="text-[0.8125rem] text-gray-200 leading-normal m-0">
+                            Pět let vývoje e-commerce projektů (rossmann.cz, datart.cz, planeo.cz), klientských zón (veolia.cz) a prezentačních webů (cvak.cz), kde jsem zodpovídal za kompletní doručení frontendu – od návrhu architektury po optimalizaci načítání, přístupnosti a plynulosti interakcí.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Odkazy -->
+            <section>
+                <h2 class="text-sm font-medium text-gray-100 mb-6">Odkazy</h2>
+                <ul class="flex gap-6 list-none p-0 m-0">
+                    <li><a href="https://github.com/jakubhrstka" class="text-sm text-gray-200 underline underline-offset-4 hover:text-gray-100 hover:no-underline">github</a></li>
+                    <li><a href="https://www.linkedin.com/in/hrstkajakub/" class="text-sm text-gray-200 underline underline-offset-4 hover:text-gray-100 hover:no-underline">linkedin</a></li>
+                    <li><a href="mailto:hi@jakubhrstka.cz" class="text-sm text-gray-200 underline underline-offset-4 hover:text-gray-100 hover:no-underline">email</a></li>
+                </ul>
+            </section>
         </main>
     </body>
 </html>
